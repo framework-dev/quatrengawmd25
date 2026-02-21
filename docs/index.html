@@ -1,12 +1,12 @@
 <!doctype html>
 <notebook theme="air">
-  <title>Quatrenga WMD Fall’25 0.1</title>
-  <script id="0" type="text/html">
+  <title>Untitled</title>
+  <script id="1" type="text/html">
     <div class="responsive-container" id="renga-grid">
       ${gridHTML}
     </div>
   </script>
-  <script id="1" type="module" hidden="">
+  <script id="2" type="module" hidden="">
     const buildGridHTML = () => {
       const allCells = [];
       let cellIndex = 0;
@@ -150,7 +150,7 @@
       }
     }
   </script>
-  <script id="2" type="module" hidden="">
+  <script id="3" type="module" hidden="">
     const showVerseTable = [new Map([
       [1, [2,3,4,5,6,7,8]],
       [2, [10,18,26,34,42,50,58]],
@@ -270,7 +270,7 @@
     ])
       ];
   </script>
-  <script id="3" type="module" hidden="">
+  <script id="4" type="module" hidden="">
     function parseTsvToJson(tsvString) {
       const lines = tsvString.trim().split('\n');
       const headers = lines[0].split('\t').map(h => h.trim());
@@ -294,10 +294,10 @@
     // Parse the TSV data
     const rengaData = parseTsvToJson(tsvTable[state.currentIndex]);
   </script>
-  <script id="4" type="module" hidden="">
+  <script id="5" type="module" hidden="">
     const state = { currentIndex: 0 }
   </script>
-  <script id="5" type="module">
+  <script id="6" type="module">
     const tsvTable = [`Poet	Andrew	Isa	John	Minh Khue	Pranavi	Sehee	TJ
     Sehee	<b>wind</b>	moon 	cloud	sea	gravity	thunder	star
     Isa	flows	whistles 	keens	blows	billows	sings	<b>softens</b>
@@ -315,7 +315,7 @@
     Pranavi	what	withheld 	terror	burns 	contempt	left	<b>hope</b>
     Andrew	now	history 	unending	<b>within</b>	forgetting	alone	less`];
   </script>
-  <script id="6" type="module" hidden="">
+  <script id="7" type="module" hidden="">
     let highlightedCells = [];
 
     function highlightVerses(key) {
